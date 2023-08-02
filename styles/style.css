@@ -11131,11 +11131,11 @@ body {
 
 .design-card {
   background: transparent;
-  box-shadow: 4px -4px 0px #d75f0a;
+  box-shadow: 4px -4px 0px #ff9d58;
   /*-webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);*/
   border-radius: 0.5rem;
-  border: 6px solid #12609F;
+  border: 6px solid #14129f;
   transform-style: preserve-3d;
   border-top: 0;
   color: #fff;
