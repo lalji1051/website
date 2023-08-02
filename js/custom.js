@@ -30,47 +30,6 @@ $(document).ready(function () {
 
     setTimeout(function () {
 
-        // modal
-        var contactModal = new bootstrap.Modal(document.getElementById('contact_form'), {});
-        $("#myForm").on('submit', function (event) {
-
-            ShowLoader();
-            var response = grecaptcha.getResponse();
-            if (response.length == 0) {
-                document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
-                HideLoader();
-                return false;
-                
-            }
-            else{
-                event.preventDefault();
-                var formData = $(this).serialize();
-                $.ajax({
-                    type: 'POST',
-                    headers: {
-                        'Accept': 'application/json'
-                    },
-                    url: '../mail.php',
-                    dataType: "json",
-                    data: formData,
-                    success: function (response) {
-                        //alert(response.status);
-                        localStorage.setItem("modalopen", true);
-                        contactModal.hide();
-                        HideLoader();
-                        iframeOpen(siteURL)
-                    },
-                    error: function (xhr, status, error) {
-                        console.log(status);
-                        HideLoader();
-                    }
-                });
-            }
-            
-        });
-        function verifyCaptcha() {
-            document.getElementById('g-recaptcha-error').innerHTML = '';
-        }
         $(".btn-open-iframe").click(function () {
             ShowLoader();
             siteURL = $(this).attr("data")
