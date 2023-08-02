@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Kiosk Dashboard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Raleway:400,500,600&display=swap" rel="stylesheet" />
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="sidebar-toggled">
+    <div id="wrapper">
+        <div class="sidebar" id="accordionSidebar">
+            <div class="top">
+                <a class="logo" href="index.html">
+                    Logo
+                </a>
+                <span class="menu-title">Menu</span>
+                <ul class="main-navigation">
+                    <li class="dashboard active">
+                        <a href="#">
+                            <span class="icon"></span>
+                            <span class="menu-txt">Dashboard</span>
+
+                        </a>
+                    </li>
+                    <li class="visitor">
+                        <a href="#">
+                            <span class="icon"></span>
+                            <span class="menu-txt">Visitor Management</span>
+
+                        </a>
+                        <ul class="sub-navigation">
+                            <li>
+                                <a href="#">Sub Menu</a>
+                            </li>
+                            <li>
+                                <a href="#">Sub Menu 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Sub Menu 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Sub Menu 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="employee">
+                        <a href="#">
+                            <span class="icon"></span>
+                            <span class="menu-txt">Employee Management</span>
+                        </a>
+                        <ul class="sub-navigation">
+                            <li>
+                                <a href="#">Sub Menu</a>
+                            </li>
+                            <li>
+                                <a href="#">Sub Menu 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Sub Menu 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Sub Menu 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="pre-booking">
+                        <a href="#">
+                            <span class="icon"></span>
+                            <span class="menu-txt">Pre-Booking</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span class="location-txt">Location: Ahmedabad</span>
+
+        </div>
+        <div id="content-wrapper">
+            <button class="btn-menu toggled active" id="sidebarToggle"></button>
+            <div class="clearfix">
+                <div class="top-section bg-white mb-4">
+                    <div class="container-fluid">
+                        <div class="d-flex px-2 py-1 align-items-center">
+                            <span class="page-title">Dashboard</span>
+                            <div class="ml-auto">
+                                <ul class="navbar-nav d-flex flex-row align-items-center">
+                                    <li>
+                                        <span class="time-txt">21-12-2019 11:55 pm</span>
+                                    </li>
+                                    <li class="nav-item ml-2 ml-xl-4">
+                                        <a href="#">
+                                            <img src="img/icon-search.png" />
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mx-2 mx-xl-4">
+                                        <a class="nav-link d-flex align-items-center flex-column" href="#">
+                                            <img src="img/icon-notifaction.png" />
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link d-flex align-items-center flex-column" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="img/icon-user.png" class="rounded-circle user-img">
+                                            <span class="user-txt">User Name</span>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Dashboard</a>
+                                            <a class="dropdown-item" href="#">Edit Profile</a>
+                                            <a class="dropdown-item" href="#">Log Out</a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="px-2">
+                        <div class="row mb-2">
+                            <div class="col-xl-8">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="add white-box">
+                                            <a href="#">+</a>
+                                            <h3>Add New</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="white-box">
+                                            <span class="count-txt">02</span>
+                                            <h3>Vistor</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="white-box">
+                                            <span class="count-txt">03</span>
+                                            <h3>Interview</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="white-box">
+                                            <span class="count-txt">375</span>
+                                            <h3>Employee</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="white-box">
+                                            <span class="count-txt">02</span>
+                                            <h3>Today’S Booking</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="white-box">
+                                            <span class="count-txt">02</span>
+                                            <h3>Delivery</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-4">
+                                <div class="fast-checkin-box">
+                                    <h3>Fast Check in’s</h3>
+                                    <ul class="custom-scroll fast-check-list">
+                                        <li>
+                                            <span class="sr-no">1</span>
+                                            <span class="customer-name">Customer Name</span>
+                                            <a href="#" class="btn-checkin">Check in</a>
+                                        </li>
+                                        <li>
+                                            <span class="sr-no">2</span>
+                                            <span class="customer-name">Customer Name</span>
+                                            <a href="#" class="btn-checkout">Check out</a>
+                                        </li>
+                                        <li>
+                                            <span class="sr-no">3</span>
+                                            <span class="customer-name">Customer Name</span>
+                                            <a href="#" class="btn-checkin">Check in</a>
+                                        </li>
+                                        <li>
+                                            <span class="sr-no">4</span>
+                                            <span class="customer-name">Customer Name</span>
+                                            <a href="#" class="btn-checkin">Check in</a>
+                                        </li>
+                                        <li>
+                                            <span class="sr-no">5</span>
+                                            <span class="customer-name">Customer Name</span>
+                                            <a href="#" class="btn-checkin">Check in</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="section-title">check ins</div>
+                                    <a href="#" class="btn-reaming-checkout">
+                                        Remaining For chechout
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-md-12">
+                                <div class="custom-tab">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#todayTab">Today</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#lastWeekTab">Last Week</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#customTab">Custom</a>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content pt-3">
+                                        <div class="tab-pane active" id="todayTab">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive">
+                                                        <table class="table custom-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>VISITOR NAME</th>
+                                                                    <th>CHECK IN</th>
+                                                                    <th>PURPOSE</th>
+                                                                    <th>TO MEET</th>
+                                                                    <th>CHECK OUT</th>
+                                                                    <th>EMAIL ID</th>
+                                                                    <th>CONTACT NO.</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="img/icon-user.png" />
+                                                                            Tifany Stif
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <span>3:32</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label class="lable lbl-interview">
+                                                                            Interview
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>Andrew</td>
+                                                                    <td class="text-center">
+                                                                        <span>4:40</span>
+                                                                    </td>
+                                                                    <td>Tifanystif@gmail.com</td>
+                                                                    <td>
+                                                                        <span>+2458 245 253</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="img/icon-user.png" />
+                                                                            Tifany Stif
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <span>3:32</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label class="lable lbl-delivery">
+                                                                            Delivery
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>Andrew</td>
+                                                                    <td class="text-center">
+                                                                        <span>4:40</span>
+                                                                    </td>
+                                                                    <td>Tifanystif@gmail.com</td>
+                                                                    <td>
+                                                                        <span>+2458 245 253</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="img/icon-user.png" />
+                                                                            Tifany Stif
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <span>3:32</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label class="lable lbl-visitor">
+                                                                            Visitor
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>Andrew</td>
+                                                                    <td class="text-center">
+                                                                        <span>4:40</span>
+                                                                    </td>
+                                                                    <td>Tifanystif@gmail.com</td>
+                                                                    <td>
+                                                                        <span>+2458 245 253</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="img/icon-user.png" />
+                                                                            Tifany Stif
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <span>3:32</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label class="lable lbl-interview">
+                                                                            Interview
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>Andrew</td>
+                                                                    <td class="text-center">
+                                                                        <span>4:40</span>
+                                                                    </td>
+                                                                    <td>Tifanystif@gmail.com</td>
+                                                                    <td>
+                                                                        <span>+2458 245 253</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="img/icon-user.png" />
+                                                                            Tifany Stif
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <span>3:32</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label class="lable lbl-delivery">
+                                                                            Delivery
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>Andrew</td>
+                                                                    <td class="text-center">
+                                                                        <span>4:40</span>
+                                                                    </td>
+                                                                    <td>Tifanystif@gmail.com</td>
+                                                                    <td>
+                                                                        <span>+2458 245 253</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="img/icon-user.png" />
+                                                                            Tifany Stif
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <span>3:32</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label class="lable lbl-visitor">
+                                                                            Visitor
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>Andrew</td>
+                                                                    <td class="text-center">
+                                                                        <span>4:40</span>
+                                                                    </td>
+                                                                    <td>Tifanystif@gmail.com</td>
+                                                                    <td>
+                                                                        <span>+2458 245 253</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="img/icon-user.png" />
+                                                                            Tifany Stif
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <span>3:32</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label class="lable lbl-interview">
+                                                                            Interview
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>Andrew</td>
+                                                                    <td class="text-center">
+                                                                        <span>4:40</span>
+                                                                    </td>
+                                                                    <td>Tifanystif@gmail.com</td>
+                                                                    <td>
+                                                                        <span>+2458 245 253</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="img/icon-user.png" />
+                                                                            Tifany Stif
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <span>3:32</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label class="lable lbl-delivery">
+                                                                            Delivery
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>Andrew</td>
+                                                                    <td class="text-center">
+                                                                        <span>4:40</span>
+                                                                    </td>
+                                                                    <td>Tifanystif@gmail.com</td>
+                                                                    <td>
+                                                                        <span>+2458 245 253</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <div class="d-flex align-items-center">
+                                                                            <img src="img/icon-user.png" />
+                                                                            Tifany Stif
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <span>3:32</span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label class="lable lbl-visitor">
+                                                                            Visitor
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>Andrew</td>
+                                                                    <td class="text-center">
+                                                                        <span>4:40</span>
+                                                                    </td>
+                                                                    <td>Tifanystif@gmail.com</td>
+                                                                    <td>
+                                                                        <span>+2458 245 253</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane container fade" id="lastWeekTab">
+                                            Last Week
+                                        </div>
+                                        <div class="tab-pane container fade" id="customTab">
+                                            Custom
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
