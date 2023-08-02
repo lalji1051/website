@@ -14,7 +14,7 @@ function iframeOpen(id) {
     $('body').addClass("iframe-open");
 
     //$(".load-site").attr("src", "http://127.0.0.1:5500/" + id).css("display", "block");
-    $(".load-site").attr("src", "https://uiwork.azurewebsites.net/" + id).css("display", "block");
+    $(".load-site").attr("src", "https://lalji1051.github.io/website/" + id).css("display", "block");
     HideLoader();
 }
 
